@@ -1,0 +1,117 @@
+header {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+
+  .logo {
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+    width: 100%;
+    min-width: 100px;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+
+    .navbar-nav {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+
+      .nav-item {
+        .nav-link {
+          white-space: nowrap;
+          font-size: 0.8rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          margin-right: 1.25rem;
+          background-color: transparent;
+        }
+
+        .nav-link:hover {
+          color: #9968ed;
+        }
+      }
+    }
+
+    .localize_section {
+      .dropdown {
+        position: relative;
+
+        .dropdown-content {
+          right: 0.5px;
+          display: none;
+          position: absolute;
+          border-radius: 10px;
+          background-color: #f9f9f9;
+          max-width: 60px;
+          box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.8);
+          padding: 5px 5px;
+          z-index: 1;
+        }
+      }
+
+      .dropdown:hover {
+        .dropdown-content {
+          display: block;
+        }
+      }
+    }
+
+    .nav_account {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 2px 14.3614px;
+      gap: 10px;
+      background: #7a2df5;
+      border-radius: 6px;
+      height: 2rem;
+      font-size: 1rem;
+
+      a {
+        white-space: nowrap;
+      }
+
+      span {
+        color: #fff8f2 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 986px){
+  header {
+    background-color: #ffffff;
+
+    .logo {
+      margin-bottom: 4px;
+    }
+
+    .navbar-toggler-icon {
+      display: grid;
+      align-items: center;
+    }
+
+    .navbar-collapse {
+      .navbar-nav {
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
