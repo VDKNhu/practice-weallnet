@@ -41,9 +41,18 @@ header {
           color: #9968ed;
         }
       }
+
+      .nav-item:hover {
+        background-image: url("./../../../assets/photos/background-title-team.png");
+        background-repeat: no-repeat;
+        background-size: 100% 80%;
+        background-position: center;
+        margin-left: -15px;
+        padding-left: 15px;
+      }
     }
 
-    .localize_section {
+    .localize-section {
       .dropdown {
         position: relative;
 
@@ -67,7 +76,7 @@ header {
       }
     }
 
-    .nav_account {
+    .nav-account {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -90,7 +99,7 @@ header {
   }
 }
 
-@media screen and (max-width: 986px){
+@media screen and (max-width: 986px) {
   header {
     background-color: #ffffff;
 
@@ -108,10 +117,21 @@ header {
         -ms-flex-direction: column;
         flex-direction: column;
       }
+
+      .navbar-nav {
+        .nav-item {  
+          .nav-link:hover {
+            color: #9968ed;
+          }
+        }
+  
+        .nav-item:hover {
+          background-image: none;
+        }
+      }
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 }
-

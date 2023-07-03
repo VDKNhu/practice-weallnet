@@ -6,8 +6,6 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'weallnet';
-
   ngOnInit() {
     AOS.init();
   }
@@ -16,3 +14,12 @@ export class AppComponent implements OnInit {
     window.scrollTo(0,0);
   }
 }
+
+
+
+
+
+
+
+
+
